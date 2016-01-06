@@ -1,0 +1,18 @@
+server:
+  restart: always
+  image: nginx
+  volumes:
+    - ./server/conf.d:/etc/nginx/conf.d
+    - ./app/static:/app/static
+  links:
+    - web:web
+  ports:
+    - "80:80"
+
+web:
+  extends:
+    file: docker-compose.base.yml
+    service: web
+  expose:
+    - "8000"
+  command: gunicorn app:app -b :8000 --name app --log-level=debug --log-file=-

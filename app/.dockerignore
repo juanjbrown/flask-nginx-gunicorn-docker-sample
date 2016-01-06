@@ -1,0 +1,8 @@
+# Currently, this doesn't work with docker-compose
+# build. But it does with docker build -t [tag name]
+.dockerignore
+.gitignore
+.git
+bin
+Dockerfile
+.env
