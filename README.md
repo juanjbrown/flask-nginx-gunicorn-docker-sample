@@ -9,7 +9,7 @@ You'll need to install docker if you haven't (https://docs.docker.com/).
 
 #### Build
 
-    docker-compose build
+    $ docker-compose build
 
 #### Run
 
