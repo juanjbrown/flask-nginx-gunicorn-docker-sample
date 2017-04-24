@@ -5,7 +5,10 @@ Sample Docker setup using Flask, Gunicorn, and Nginx.
 
 # Setup
 
-You'll need to install docker if you haven't (https://docs.docker.com/).
+You'll need to install Docker and Docker Compose if you haven't.
+
+- Install Docker: https://docs.docker.com/engine/installation/
+- Install Docker Compose: https://docs.docker.com/compose/install/
 
 #### Build
 
